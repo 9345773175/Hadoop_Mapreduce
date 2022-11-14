@@ -1,0 +1,26 @@
+HADOOP MAPREDUCE USING WORDCOUNT
+
+
+
+
+
+
+
+
+
+
+COMMANDS:
+
+
+ ifconfig
+ hdfs dfs -copyFromLocal hadoop_project.txt
+ hdfs dfs -mkdir hdfs_project1
+ hadoop jar hadoop-mapreduce-examples-2.2.0.jar
+ hadoop jar hadoop-mapreduce-examples-2.2.0.jar wordcount hadoop_project.txt /hdfs_project1/wc_input1
+ hadoop jar hadoop-mapreduce-examples-2.2.0.jar wordmean hadoop_project.txt /hdfs_project1/wc_input2
+ hadoop jar hadoop-mapreduce-examples-2.2.0.jar wordmedian hadoop_project.txt /hdfs_project1/wc_input2
+ hadoop jar hadoop-mapreduce-examples-2.2.0.jar wordmedian hadoop_project.txt /hdfs_project1/wc_input3
+ hadoop jar hadoop-mapreduce-examples-2.2.0.jar wordmean hadoop_project.txt /hdfs_project1/wc_input2
+ hadoop jar hadoop-mapreduce-examples-2.2.0.jar wordsd hadoop_project.txt /hdfs_project1/wc_input4
+ hadoop jar hadoop-mapreduce-examples-2.2.0.jar wordstandarddeviaton hadoop_project.txt /hdfs_project1/wc_input4
+ hadoop jar hadoop-mapreduce-examples-2.2.0.jar wordstandarddeviation hadoop_project.txt /hdfs_project1/wc_input4
